@@ -14,6 +14,7 @@ pipeline {
 			steps {
 				//powershell 'java -version'
 				//powershell 'mvn -version'
+				dir("Happytriptestcase/Happytrip/")
 				powershell 'mvn clean package'
 				archiveArtifacts 'target/*.war'
 
