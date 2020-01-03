@@ -12,8 +12,8 @@ pipeline {
 				maven 'Maven'
 			}
 			steps {
-				powershell 'java -version'
-				powershell 'mvn -version'
+				//powershell 'java -version'
+				//powershell 'mvn -version'
 				powershell 'mvn clean package'
 				archiveArtifacts 'target/*.war'
 
